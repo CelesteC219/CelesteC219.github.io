@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Art of Tiles</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/6d314a2f30.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="colmain">
+
+        <header>
+            <div id="headsquare">
+                <label id="ham">&#9776;</label>
+                <h1 onclick="javascript:location.href='../index.html'">TilesMag</h1>
+            </div>
+            <nav id="menu" class="show-menu">
+                <ul class="nav-menu">
+                    <li class="heading"><a href="../index.html">Home</a></li>
+                    <li class="heading"><a href="article.html">Articles</a></li>
+                    <li class="heading  active"><a href="#">Contact</a></li>
+                    <li class="heading"><a href="source.html">Source</a></li>
+                </ul>
+                <div id="search">
+                    <input type="text" placeholder="Search.." name="search" id="searchcol" class="showsearch">
+                    <button type="submit" onclick="showsearch()"><i class="fa fa-search" style="color: white;"></i></button>
+                </div>
+            </nav>
+        </header>
+
+        <div class="imgcol"></div>
+
+        <main class="centercol">
+            <h3>Subscribe & Join Us!</h3>
+            <form action="https://formspree.io/f/xpzbawdk" method="POST">
+                <fieldset>
+                    <label>Your email:<input type="email" name="_replyto"></label>
+                    <label>Your message:<textarea name="message"></textarea></label>       
+                    <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+        </main>
+
+        <div class="imgcol"></div>
+
+        <footer>
+            <p>&copy;2021 By Celeste Chen</p>
+            <div class="fontaw">
+                <a href="https://twitter.com/turkicworldd/status/1464296327072858115" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter fa-2x"></i></a>
+                <a href="https://www.facebook.com/finishingtouchestileart/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f fa-2x"></i></a>
+                <a href="https://www.pinterest.com/pin/29484572552218370/" target="_blank" rel="noopener noreferrer"><i class="fab fa-pinterest-p fa-2x"></i></a>
+            </div>
+            <ul id="footerli">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="article.html">Article</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="source.html">Source</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
